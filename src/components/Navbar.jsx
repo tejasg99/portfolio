@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { FaHome, FaUser, FaCode, FaProjectDiagram, FaEnvelope } from 'react-icons/fa';
+import DarkModeToggle from './DarkModeToggle';
 
 const navLinks = [
   { id: 'home', label: 'Home', icon: <FaHome /> },
@@ -56,6 +57,7 @@ const Navbar = () => {
           <span className="hidden sm:inline">{link.label}</span>
         </button>
       ))}
+      <DarkModeToggle />
     </motion.nav>
   );
 };

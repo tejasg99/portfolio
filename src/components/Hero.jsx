@@ -25,7 +25,7 @@ const Hero = () => {
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.9 }}
-        className="text-xl md:text-2xl font-semibold text-neutral-900 mb-2"
+        className="text-xl md:text-2xl font-semibold text-neutral-900 dark:text-neutral-200 mb-2"
       >
         Full Stack Developer
       </motion.h2>
@@ -33,7 +33,7 @@ const Hero = () => {
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.1 }}
-        className="text-lg md:text-xl text-neutral-700 max-w-xl mb-8"
+        className="text-lg md:text-xl text-neutral-700 dark:text-neutral-400 max-w-xl mb-8"
       >
         Building modern, scalable web apps with a touch of creativity.<br />Let's turn ideas into reality!
       </motion.p>

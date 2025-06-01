@@ -25,7 +25,7 @@ const Contact = () => {
       <div className="flex flex-col md:flex-row gap-10 items-start w-full max-w-4xl mt-10">
         <div className="mx-auto md:mx-0 flex flex-col gap-4 mb-8 md:mb-0">
           {socials.map((s) => (
-            <a key={s.label} href={s.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-lg text-neutral-600 hover:text-black transition-colors">
+            <a key={s.label} href={s.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-lg text-neutral-600 dark:text-neutral-400 dark:hover:text-neutral-200 hover:text-black transition-colors">
               <span className="text-2xl">{s.icon}</span> {s.label}
             </a>
           ))}
@@ -35,19 +35,19 @@ const Contact = () => {
             whileFocus={{ scale: 1.04 }}
             type="text"
             placeholder="Your Name"
-            className="px-4 py-3 rounded-lg text-neutral-900 border border-blue-900 focus:outline-none focus:ring-2 focus:ring-blue-900 transition-all"
+            className="px-4 py-3 rounded-lg text-neutral-900 dark:text-neutral-200 placeholder:text-neutral-600 dark:placeholder:text-neutral-500 border border-blue-900 focus:outline-none focus:ring-2 focus:ring-blue-900 transition-all"
           />
           <motion.input
             whileFocus={{ scale: 1.04 }}
             type="email"
             placeholder="Your Email"
-            className="px-4 py-3 rounded-lg text-neutral-900 border border-blue-900 focus:outline-none focus:ring-2 focus:ring-blue-900 transition-all"
+            className="px-4 py-3 rounded-lg text-neutral-900 dark:text-neutral-200 placeholder:text-neutral-600 dark:placeholder:text-neutral-500 border border-blue-900 focus:outline-none focus:ring-2 focus:ring-blue-900 transition-all"
           />
           <motion.textarea
             whileFocus={{ scale: 1.04 }}
             rows="5"
             placeholder="Your Message"
-            className="px-4 py-3 rounded-lg text-neutral-900 border border-blue-900 focus:outline-none focus:ring-2 focus:ring-blue-900 transition-all resize-none"
+            className="px-4 py-3 rounded-lg text-neutral-900 dark:text-neutral-200 placeholder:text-neutral-600 dark:placeholder:text-neutral-500 border border-blue-900 focus:outline-none focus:ring-2 focus:ring-blue-900 transition-all resize-none"
           />
           <motion.button
             whileHover={{ scale: 1.05 }}
