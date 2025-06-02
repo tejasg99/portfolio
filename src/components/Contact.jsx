@@ -1,13 +1,12 @@
 import { motion } from 'framer-motion';
-import { FaEnvelope, FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
+import { FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
 import { FaXTwitter } from "react-icons/fa6";
 
 const socials = [
-  { icon: <FaEnvelope />, label: 'Email', url: 'mailto:your@email.com' },
-  { icon: <FaLinkedin />, label: 'LinkedIn', url: '#' },
-  { icon: <FaGithub />, label: 'GitHub', url: '#' },
-  { icon: <FaXTwitter />, label: 'X', url: '#' },
-  { icon: <FaInstagram />, label: 'Instagram', url: '#' },
+  { icon: <FaEnvelope />, label: 'Email', url: 'mailto:tgawade092@gmail.com' },
+  { icon: <FaLinkedin />, label: 'LinkedIn', url: 'www.linkedin.com/in/tejas-gawade-97t' },
+  { icon: <FaGithub />, label: 'GitHub', url: 'https://github.com/tejasg99' },
+  { icon: <FaXTwitter />, label: 'X', url: 'https://x.com/Tejas9_' },
 ];
 
 const Contact = () => {

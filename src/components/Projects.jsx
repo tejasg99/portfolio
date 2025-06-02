@@ -7,8 +7,8 @@ const projects = [
     desc: 'A Virtual Event Management Platform to host and manage events such as webinars, meetups, hackathons and more. It includes features like event creation, registration and live streaming using Jitsi meet.',
     tech: ['React', 'Node.js', 'MongoDB', 'Socket.io', 'Jitsi Meet', 'Redux-toolkit', 'TailwindCSS'],
     img: '/EventMan.png',
-    github: '#',
-    demo: '#',
+    frontend: 'https://github.com/tejasg99/virtual-EMS-frontend',
+    backend: 'https://github.com/tejasg99/virtual-EMS-backend',
     gradient: 'bg-gradient-to-br from-blue-800 via-blue-500 to-indigo-900',
   },
   {
@@ -16,8 +16,9 @@ const projects = [
     desc: 'A video streaming platform built with React and TailwindCSS. It allows users to upload, view, and manage videos. Includes features like user authentication, video upload, and a responsive design.',
     tech: ['React', 'TailwindCSS', 'Node.js', 'MongoDB', 'Mongoose', 'Redux-toolkit', 'JWT'],
     img: '/StreamTube.png',
-    github: '#',
-    demo: '#',
+    frontend: 'https://github.com/tejasg99/StreamTube-frontend',
+    backend: 'https://github.com/tejasg99/StreamTube-backend',
+    demo: 'https://visitstreamtube.vercel.app/',
     gradient: 'bg-gradient-to-br from-emerald-800 via-emerald-500 to-emerald-900'
   },
   {
@@ -25,16 +26,16 @@ const projects = [
     desc: 'A webapp which uses distube/ytdl-core library to download video streams and then converts and merges them into a video using FFMPEG.',
     tech: ['Node.js', 'Express.js', 'MongoDB', 'distube/ytdl-core', 'ffmpeg'],
     img: 'YTD.png',
-    github: '#',
-    demo: '#',
+    frontend: 'https://github.com/tejasg99/youtube-downloader-frontend',
+    backend: 'https://github.com/tejasg99/youtube-downloader-backend',
     gradient: 'bg-gradient-to-br from-rose-600 via-rose-400 to-red-500'
   },
   {
     title: 'Portfolio website',
-    desc: 'A portfolio website with smooth animations, responsive design, and a modern layout to showcase projects and skills.',
+    desc: 'A portfolio website with smooth animations, responsive design, dark mode support and a modern layout to showcase projects and skills.',
     tech: ['React', 'Vite', 'TailwindCSS'],
     img: '/Portfolio.png',
-    github: '#',
+    frontend: 'https://github.com/tejasg99/portfolio',
     demo: '#',
     gradient: 'bg-gradient-to-br from-amber-500 via-amber-300 to-yellow-400'
   },
@@ -75,9 +76,23 @@ const Projects = () => {
                     </span>
                   ))}
                 </div>
-                <div className="flex gap-4">
-                  <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 text-lg"><FaGithub /></a>
-                  <a href={project.demo} target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300 text-lg"><FaExternalLinkAlt /></a>
+                <div className="flex flex-wrap gap-2">
+                  <button className='flex items-center gap-1 text-white px-2 py-1 border border-white rounded-full hover:cursor-pointer hover:text-gray-300' onClick={() => window.open(project.frontend, '_blank')}>
+                    Frontend
+                    <FaGithub className="text-lg hover:text-gray-300" />
+                  </button>
+                  {project.backend && (
+                    <button className='flex items-center gap-1 text-white px-2 py-1 border border-white rounded-full hover:cursor-pointer hover:text-gray-300' onClick={() => window.open(project.backend, '_blank')}>
+                      Backend
+                      <FaGithub className="text-lg hover:text-gray-300" />
+                    </button>
+                  )}
+                  {project.demo && (
+                    <button className='flex items-center gap-1 text-white px-2 py-1 border border-white rounded-full hover:cursor-pointer hover:text-gray-300' onClick={() => window.open(project.demo, '_blank')}>
+                      Live Link
+                      <FaExternalLinkAlt className="text-md hover:text-gray-300" />
+                    </button>                   
+                  )}
                 </div>
               </div>
             </div>
