@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
 import { FaXTwitter } from "react-icons/fa6";
 import emailjs from '@emailjs/browser';
+import toast from 'react-hot-toast';
 
 const socials = [
   { icon: <FaEnvelope />, label: 'Email', url: 'mailto:tgawade092@gmail.com' },
@@ -33,12 +34,12 @@ const Contact = () => {
       e.target,
     ).then(
       (response) => {
-        alert('Message sent successfully!');
+        toast.success('Message sent successfully!');
         console.log('Message sent successfully:', response);
         setSubmitting(false);
       },
       (error) => {
-        alert('Failed to send message. Please try again later.');
+        toast.error('Failed to send message. Please try again later.');
         console.error('Error sending message:', error);
         setSubmitting(false);
       }

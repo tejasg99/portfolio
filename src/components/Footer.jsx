@@ -18,13 +18,13 @@ const Footer = () => {
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         aria-label="Scroll to top"
         type="button" 
-        className='flex items-center gap-1 cursor-pointer'
+        className='flex items-center gap-1 cursor-pointer text-neutral-800 dark:text-neutral-300'
         >
           Scroll to Top
           <FaArrowUpLong className="inline-block text-lg" />
         </button>
       </div>
-      <div className="text-gray-800 dark:text-gray-400 text-sm">&copy; {new Date().getFullYear()}</div>
+      <div className="text-neutral-800 dark:text-neutral-300 text-sm">&copy; {new Date().getFullYear()} Tejas Gawade</div>
       <div className="flex gap-3">
         {socials.map((s, i) => (
           <a key={i} href={s.url} target="_blank" rel="noopener noreferrer" className="text-xl text-neutral-600 hover:text-black dark:text-neutral-400 dark:hover:text-neutral-100 transition-colors">
