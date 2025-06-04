@@ -58,7 +58,7 @@ const Contact = () => {
       >
         Contact
       </motion.h2>
-      <div className="flex flex-col md:flex-row gap-10 items-start w-full max-w-4xl mt-10">
+      <div className="flex flex-col md:flex-row gap-10 items-start justify-center w-full max-w-4xl mt-10">
         <div className="mx-auto md:mx-0 flex flex-col gap-4 mb-8 md:mb-0">
           {socials.map((s) => (
             <a key={s.label} href={s.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-lg text-neutral-600 dark:text-neutral-400 dark:hover:text-neutral-200 hover:text-black transition-colors">
@@ -98,7 +98,7 @@ const Contact = () => {
           </motion.button>
         </form>
       </div>
-      <div className='max-w-2xl mt-5 text-center p-5'>
+      <div className='max-w-3xl mt-5 text-center p-5'>
         <p className='text-sm text-neutral-800 dark:text-neutral-400'>
           Note: This form sends the message as an email to me and is designed for business use only if you have any queries or want to discuss a project. Please do not use it for personal messages instead reach out to me via my social media links above.
         </p>
