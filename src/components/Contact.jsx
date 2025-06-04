@@ -7,7 +7,7 @@ import toast from 'react-hot-toast';
 
 const socials = [
   { icon: <FaEnvelope />, label: 'Email', url: 'mailto:tgawade092@gmail.com' },
-  { icon: <FaLinkedin />, label: 'LinkedIn', url: 'www.linkedin.com/in/tejas-gawade-97t' },
+  { icon: <FaLinkedin />, label: 'LinkedIn', url: 'https://linkedin.com/in/tejas-gawade-97t' },
   { icon: <FaGithub />, label: 'GitHub', url: 'https://github.com/tejasg99' },
   { icon: <FaXTwitter />, label: 'X', url: 'https://x.com/Tejas9_' },
 ];
@@ -54,7 +54,7 @@ const Contact = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.7 }}
-        className="text-3xl md:text-4xl font-bold mb-8 bg-gradient-to-r from-cyan-700 via-blue-700 to-indigo-700 bg-clip-text text-transparent"
+        className="text-3xl md:text-4xl font-bold mb-8 bg-gradient-to-br from-indigo-700 via-blue-500 to-indigo-700 bg-clip-text text-transparent"
       >
         Contact
       </motion.h2>
@@ -66,7 +66,7 @@ const Contact = () => {
             </a>
           ))}
         </div>
-        <form onSubmit={handleSubmit} className="flex flex-col gap-4 bg-white/60 dark:bg-gray-950/80 p-8 rounded-2xl shadow-lg w-full md:w-2/3">
+        <form onSubmit={handleSubmit} className="flex flex-col gap-4 bg-white/60 dark:bg-gray-950 p-8 rounded-2xl shadow-lg w-full md:w-2/3">
           <motion.input
             whileFocus={{ scale: 1.04 }}
             name='name'
@@ -97,6 +97,11 @@ const Contact = () => {
             {submitting ? 'Sending...':'Send Message'}
           </motion.button>
         </form>
+      </div>
+      <div className='max-w-2xl mt-5 text-center p-5'>
+        <p className='text-sm text-neutral-800 dark:text-neutral-400'>
+          Note: This form sends the message as an email to me and is designed for business use only if you have any queries or want to discuss a project. Please do not use it for personal messages instead reach out to me via my social media links above.
+        </p>
       </div>
     </section>
   );

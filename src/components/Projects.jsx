@@ -49,7 +49,7 @@ const Projects = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.7 }}
-        className="text-3xl md:text-4xl font-bold mb-8 bg-gradient-to-r from-cyan-700 via-blue-700 to-indigo-700 bg-clip-text text-transparent"
+        className="text-3xl md:text-4xl font-bold mb-8 bg-gradient-to-br from-indigo-700 via-blue-500 to-indigo-700 bg-clip-text text-transparent"
       >
         Projects
       </motion.h2>

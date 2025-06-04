@@ -17,7 +17,7 @@ const Hero = () => {
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
-        className="text-4xl md:text-6xl font-extrabold bg-gradient-to-br from-blue-200 via-blue-600 to-indigo-900 bg-clip-text text-transparent mb-4 p-3"
+        className="text-4xl md:text-6xl font-extrabold bg-gradient-to-br from-indigo-700 via-blue-500 to-indigo-700 bg-clip-text text-transparent mb-4 p-3"
       >
         Tejas Gawade
       </motion.h1>

@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import { FaNodeJs, FaReact, FaHtml5, FaCss3Alt, FaJs, FaGitAlt, FaGithub, FaCode } from 'react-icons/fa';
-import { SiMongodb, SiExpress, SiTailwindcss, SiVite, SiPostman } from 'react-icons/si';
+import { SiMongodb, SiExpress, SiTailwindcss, SiVite, SiPostman, SiPython } from 'react-icons/si';
+import { FcLinux } from "react-icons/fc";
+import { TbBrandCpp } from "react-icons/tb";
 
 const skills = [
   { name: 'MongoDB', icon: <SiMongodb className="text-green-500" /> },
@@ -16,6 +18,9 @@ const skills = [
   { name: 'REST APIs', icon: <FaCode className="text-pink-400" /> },
   { name: 'Vite', icon: <SiVite className="text-purple-400" /> },
   { name: 'Postman', icon: <SiPostman className="text-orange-500" /> },
+  { name: 'Linux', icon: <FcLinux className="text-slate-200" /> },
+  { name: 'Python', icon: <SiPython className="text-blue-600" /> },
+  { name: 'C++', icon: <TbBrandCpp className="text-cyan-500" /> },
 ];
 
 const Skills = () => {
@@ -26,7 +31,7 @@ const Skills = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.7 }}
-        className="text-3xl md:text-4xl font-bold mb-8 bg-gradient-to-br from-blue-700 via-blue-500 to-indigo-700 bg-clip-text text-transparent"
+        className="text-3xl md:text-4xl font-bold mb-8 bg-gradient-to-br from-indigo-700 via-blue-500 to-indigo-700 bg-clip-text text-transparent"
       >
         Skills
       </motion.h2>

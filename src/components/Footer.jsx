@@ -5,7 +5,7 @@ import { FaXTwitter } from "react-icons/fa6";
 
 const socials = [
   { icon: <FaGithub />, url: 'https://github.com/tejasg99' },
-  { icon: <FaLinkedin />, url: 'www.linkedin.com/in/tejas-gawade-97t' },
+  { icon: <FaLinkedin />, url: 'https://linkedin.com/in/tejas-gawade-97t' },
   { icon: <FaEnvelope />, url: 'mailto:tgawade092@gmail.com' },
   { icon: <FaXTwitter />, url: 'https://x.com/Tejas9_'}
 ];
