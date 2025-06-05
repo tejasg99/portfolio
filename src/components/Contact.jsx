@@ -35,7 +35,6 @@ const Contact = () => {
     ).then(
       (response) => {
         toast.success('Message sent successfully!');
-        console.log('Message sent successfully:', response);
         setSubmitting(false);
       },
       (error) => {

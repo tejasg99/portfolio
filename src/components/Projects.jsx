@@ -36,11 +36,11 @@ const projects = [
     tech: ['React', 'Vite', 'TailwindCSS'],
     img: '/Portfolio.png',
     frontend: 'https://github.com/tejasg99/portfolio',
-    demo: '#',
+    demo: 'https://tejasgawade.vercel.app/',
     gradient: 'bg-gradient-to-br from-amber-500 via-amber-300 to-yellow-400'
   },
 ];
-// Different gradients for each project card to be added
+
 const Projects = () => {
   return (
     <section id="projects" className="min-h-screen flex flex-col justify-center items-center px-5 py-10 md:px-40 bg-gradient-to-br from-white via-gray-50 to-gray-100 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950">
